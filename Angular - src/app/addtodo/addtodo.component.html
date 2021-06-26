@@ -1,0 +1,11 @@
+<div class="container" width="400px">
+<form #todoform="ngForm" class="form-group" (ngSubmit)=submit(todoform.value)>
+<label style="font-size: larger;"><strong> Task: </strong></label>
+<input type="text" name="task" style="height: 50px; font-size: 15px; font-weight:normal;" class="form-control" ngModel/>
+<label style="font-size: larger;"><strong> Status: </strong></label>
+<input type="text" name="status" style="height: 50px; font-size: 15px; font-weight:normal;" class="form-control" ngModel/>
+<br/>
+<!-- <input type="submit" value="AddToDo" style="font-weight: bold; font-size: xx-large;"> -->
+<button type="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3wgeRn0lUgz_cyf-B3UlpQzGURgRNmevXA&usqp=CAU" width="53px" height="53px"></button>
+</form>
+</div>

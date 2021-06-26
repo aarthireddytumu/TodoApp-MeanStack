@@ -1,0 +1,19 @@
+<!-- <h3 align="center">Task Status</h3> -->
+<br/>
+<table class="table table-hover table-striped" style="width:auto; margin:auto; width:70%">
+    <thead class="table table-danger">
+        <tr style="font-size: 20px;">
+            <th>TASK</th>
+            <th>STATUS</th>
+            <th>UPDATE</th>
+            <th>DELETE</th>
+        </tr></thead>
+        <tbody>
+        <tr *ngFor="let t of tasks; let i=index">
+           <td><b><i>{{t.task}}</i></b></td>
+           <td><b><i>{{t.status}}</i></b></td>
+           <td style="padding: auto;"><button type="image" (click)="update(t,i)"><img src="https://cdn1.iconfinder.com/data/icons/devices-3-3/48/133-512.png" width="43px" height="43px"></button></td>
+           <td style="padding: auto;"><button type="image" (click)="delete(t,i)"><img src="https://thumbs.dreamstime.com/b/trash-bin-flat-icon-round-colorful-button-delete-circular-vector-sign-long-shadow-effect-style-design-97877754.jpg" height="43px" width="43px"></button></td>
+        </tr>
+        </tbody>
+</table>
